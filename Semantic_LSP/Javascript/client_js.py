@@ -27,7 +27,7 @@ init_message = {
     "method": "initialize",
     "id": 1,
     "params": {
-        "rootUri": f"file://{os.getcwd()}/Typescript/Tests/",
+        "rootUri": f"file://{os.getcwd()}/Javascript/Tests/",
         "capabilities": {},
         "initializationOptions": {
             "semanticTokens": True
@@ -50,10 +50,10 @@ document_open_notification = {
     "method": "textDocument/didOpen",
     "params": {
         "textDocument": {
-            "uri": f"file://{os.getcwd()}/Typescript/Tests/test.ts",
-            "languageId": "typescript",
+            "uri": f"file://{os.getcwd()}/Javascript/Tests/test.js",
+            "languageId": "javascript",
             "version": 1,
-            "text": open(f"{os.getcwd()}/Typescript/Tests/test.ts").read()
+            "text": open(f"{os.getcwd()}/Javascript/Tests/test.js").read()
         }
     }
 }
@@ -66,7 +66,7 @@ semantic_tokens_request = {
     "method": "textDocument/semanticTokens/full",
     "params": {
         "textDocument": {
-            "uri": f"file://{os.getcwd()}/Typescript/Tests/test.ts"
+            "uri": f"file://{os.getcwd()}/Javascript/Tests/test.js"
         }
     }
 }
@@ -78,7 +78,7 @@ document_close_notification = {
     "method": "textDocument/didClose",
     "params": {
         "textDocument": {
-            "uri": f"file://{os.getcwd()}/Typescript/Tests/test.ts"
+            "uri": f"file://{os.getcwd()}/Javascript/Tests/test.js"
         }
     }
 }
